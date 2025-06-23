@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <style>
+        .menu-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .menu-item {
+            text-align: center;
+            background-color: #fff8e1;
+            border: 2px solid #ffa500;
+            border-radius: 12px;
+            width: 220px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .menu-item a {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ff6600;
+        }
+
+        .menu-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Menú de Categorías</h1>
+    </header>
+
+    <section class="menu-grid">
+        <div class="menu-item">
+            <img src="../imagenes/comida_rapida.jpg" alt="Comida Rápida">
+            <a href="comidas.html">Comida Rápida</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="../imagenes/bebidas.jpg" alt="Bebidas">
+            <a href="bebidas.html">Bebidas</a>
+        </div>
+
+        <div class="menu-item">
+            <img src="../imagenes/acompanamientos.jpg" alt="Acompañamientos">
+            <a href="acompanamientos.html">Acompañamientos</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Gian Shian - Venta de Comida</p>
+    </footer>
+
+</body>
+</html>
